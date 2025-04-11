@@ -168,7 +168,8 @@ function App() {
 
   const handleDownload = async () => {
     try {
-      const response = await fetch('http://localhost:5000/download'); // Ensure the URL is correct
+      // const response = await fetch('http://localhost:5000/download'); // Ensure the URL is correct
+      const response = await fetch('http://54.88.66.205:5000/download'); // Ensure the URL is correct
       if (!response.ok) {
         throw new Error('Failed to download file');
       }
@@ -306,8 +307,8 @@ function App() {
 
     try {
       //const response = await fetch('https://nilu11810.pythonanywhere.com/prelimlef', {
-      //const response = await fetch('http://54.88.66.205:5000/prelimlef', {
-      const response = await fetch('http://localhost:5000/prelimlef', {
+      const response = await fetch('http://54.88.66.205:5000/prelimlef', {
+      // const response = await fetch('http://localhost:5000/prelimlef', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

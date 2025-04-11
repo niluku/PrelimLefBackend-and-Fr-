@@ -1,0 +1,11 @@
+# Ignore Python venv
+Backend/venv/
+
+# Node modules (optional, usually not committed)
+my-new-app/node_modules/
+
+# OS/IDE junk
+.DS_Store
+*.log
+*.pyc
+__pycache__/
