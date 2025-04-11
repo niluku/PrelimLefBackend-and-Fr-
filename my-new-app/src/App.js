@@ -168,9 +168,7 @@ function App() {
 
   const handleDownload = async () => {
     try {
-      //const response = await fetch('http://nilu11810.pythonanywhere.com/download');
-      //const response = await fetch('http://54.88.66.205:5000/download');
-      const response = await fetch('http://localhost:5000/download');
+      const response = await fetch('http://localhost:5000/download'); // Ensure the URL is correct
       if (!response.ok) {
         throw new Error('Failed to download file');
       }
@@ -178,7 +176,7 @@ function App() {
       const url = window.URL.createObjectURL(blob); // Create a URL for the blob
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'prelimLEF.gds'; // Set the file name
+      a.download = 'new.gds'; // Set the file name
       document.body.appendChild(a);
       a.click(); // Trigger download
       a.remove(); // Clean up
@@ -187,6 +185,7 @@ function App() {
       console.error('Download failed:', error);
     }
   };
+
 
   const [firstRowSelectValues, setFirstRowSelectValues] = useState(
     matrixcolumns.reduce((acc, col) => {

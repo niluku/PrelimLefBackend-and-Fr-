@@ -5,7 +5,10 @@ import Controllers.make_local as lp
 import os
 
 def create_gds(lib):
-	lib.write_gds('./new.gds')
+    output_path = './new.gds'
+    lib.write_gds(output_path)
+    print(f"GDS file created at: {output_path}")  # Debugging line
+
 #-----------------------------------------------------------------------
 def fetch_local_pin_info(configuration):
 	local_pins = {}

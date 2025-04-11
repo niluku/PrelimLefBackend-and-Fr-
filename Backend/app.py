@@ -8,31 +8,17 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 @app.route('/download', methods=['GET'])
 def download_gds():
-    # """Get the path for the GDS file based on the operating system and send it for download."""
-    # system = platform.system()
-    # if system == "Windows":
-    #     BASE_DIR = os.path.join(os.path.expanduser("~"), "Downloads")
-    # elif system == "Darwin":  # macOS
-    #     BASE_DIR = os.path.join(os.path.expanduser("~"), "Documents")
-    # else:  # Linux and other systems
-    #     BASE_DIR = os.path.join(os.path.expanduser("~"), "Downloads")
-
-    # Define the path for the GDS file
-    # gds_filename = os.path.join(BASE_DIR, "prelimLEF.gds")
-
-    # Check if the GDS file exists
     try:
-        #sleep(60)
-        return send_file("../Downloads/prelimLEF.gds",as_attachment=True,mimetype="application/octet-stream")
+        # Use an absolute path or the correct relative path
+        gds_file_path = os.path.join(os.getcwd(), 'new.gds')
+        
+        if os.path.exists(gds_file_path):
+            return send_file(gds_file_path, as_attachment=True, mimetype="application/octet-stream")
+        else:
+            return jsonify({"error": "File not found!"}), 404
+
     except Exception as e:
-        return jsonify({"error":str(e)})
-
-    # if not os.path.exists(gds_filename):
-    #     try:
-    #         return send_file(gds_filename, as_attachment=True, download_name="prelimLEF.gds", mimetype="application/octet-stream")  # Indicate file not found
-    #     except Exception as e:
-    #         return jsonify({"error":str(e)})
-
+        return jsonify({"error": str(e)}), 500
 
 @app.route('/prelimlef', methods=['POST'])
 def main():
