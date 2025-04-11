@@ -1,0 +1,122 @@
+.container {
+  width: 55vw;
+  height: 60vh;
+  background-color: rgb(36, 37, 43);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.setupMain {
+  height: 100%;
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.setupDropdown {
+  width: 30%;
+  height: 24px;
+  padding: 4px;
+  background-color: rgb(36, 37, 43);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.BoxClass {
+  width: 95%;
+  position: relative;
+  border: 1px solid white;
+}
+
+.BoxClass2 {
+  width: 95%;
+  height: 203px;
+  position: relative;
+  border: 1px solid white;
+}
+
+.HeadingSet {
+  position: absolute;
+  color: white;
+  background-color: rgb(36, 37, 43);
+  z-index: 100;
+  top: -12px;
+  left: 16px;
+  padding: 0 10px;
+}
+
+.setLayer {
+  width: calc(100% - 40px);
+  color: white;
+  padding: 10px 0 10px 26px;
+}
+
+.InputBoxSet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2px;
+  background-color: rgb(36, 37, 43);
+  color: white;
+  gap: 10px;
+}
+
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.toggleSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.4s, border-radius 0.4s;
+  border-radius: 50px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: transform 0.4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+  border-radius: 50px;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.setupMain {
+  font-size: 14px;
+}
+
+.offsetInput,
+.setupDropdown {
+  font-size: 14px;
+}

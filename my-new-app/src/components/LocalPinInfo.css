@@ -1,0 +1,18 @@
+.table-container {
+  font-size: 14px;
+  /* Set default font size for the container */
+}
+
+.table-container input,
+.table-container select {
+  font-size: 14px;
+  /* Set font size for inputs and selects */
+}
+
+.table-container th,
+.table-container td {
+  font-size: 14px;
+  /* Ensure consistent font size for table cells */
+  padding: 5px;
+  /* Adjust padding for better spacing */
+}

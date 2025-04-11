@@ -1,0 +1,166 @@
+.container {
+  width: 50vw;
+  height: 60vh;
+  background-color: rgb(36, 37, 43);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  color: white;
+  /* White text color */
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+
+.button-container button {
+  border: 2px solid #fff;
+  /* White border color */
+  border-radius: 4px;
+  /* Rounded corners */
+  padding: 8px 16px;
+  /* Padding inside the button */
+  background-color: transparent;
+  /* Transparent background */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s, border-color 0.3s;
+  /* Smooth transitions */
+}
+
+.button-container button:hover {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* Slight background change on hover */
+  border-color: #fff;
+  /* Border color on hover */
+}
+
+
+.button-container button {
+  margin-right: 10px;
+  padding: 10px;
+  /* for background */
+  background-color: rgb(65, 105, 121);
+  /* for text */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  /* transition: background-color 0.3s ease; */
+}
+
+/* .button-container button:hover {
+  background-color: rgb(65, 105, 121);
+} */
+
+.global-pin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.global-pin-table th,
+.global-pin-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.global-pin-table th {
+  /* background-color: #4CAF50; */
+  /* Green background */
+  color: white;
+  /* White text */
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  /* Optional border */
+}
+
+.global-pin-table th:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}
+
+.input-cell {
+  background-color: rgb(36, 37, 43);
+  color: white;
+  border: 1px solid #ddd;
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-cell:focus {
+  outline: none;
+  border-color: rgb(65, 105, 121);
+}
+
+.table-container {
+  font-size: 14px;
+  /* Set default font size for the entire container */
+}
+
+button {
+  background-color: rgb(65, 105, 121);
+  /* Consistent button color */
+  color: white;
+  /* Button text color */
+  border: none;
+  /* Remove default button border */
+  border-radius: 5px;
+  /* Rounded corners */
+  padding: 5px 10px;
+  /* Padding for buttons */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+}
+
+button:disabled {
+  background-color: grey;
+  /* Disabled button color */
+  cursor: not-allowed;
+  /* Not-allowed cursor */
+}
+
+.table-container input[type="text"] {
+  width: 85px;
+  /* Fixed input width */
+  padding: 5px;
+  /* Padding inside input fields */
+  font-size: 14px;
+  /* Input font size */
+  border: 1px solid #ccc;
+  /* Input border */
+  border-radius: 4px;
+  /* Rounded corners for inputs */
+}
+
+.table-container table {
+  border-collapse: collapse;
+  /* Remove space between borders */
+  width: 100%;
+  /* Full-width table */
+}
+
+.table-container th,
+.table-container td {
+  padding: 8px;
+  /* Cell padding */
+  text-align: left;
+  /* Left align text */
+  border: 1px solid #ccc;
+  /* Cell border */
+  font-size: 14px;
+  /* Ensure consistent font size for table cells */
+}
+
+.table-container th {
+  position: relative;
+  /* For the Resizer */
+}

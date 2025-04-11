@@ -1,0 +1,263 @@
+.homebox {
+  display: flex;
+}
+
+.homeRightContainer {
+  /* background-color: black; */
+  background-color: rgb(36, 37, 43);
+  height: auto;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.OperationLeftButtonBar {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  /* padding: 0 10px; */
+  /* background-color: black; */
+  background-color: rgb(36, 37, 43);
+}
+
+
+.layerLeftBtn1 {
+  flex: 1;
+  padding: 0 10px;
+  height: 70%;
+  border: 1px solid white;
+  /* background-color: black; */
+  background-color: rgb(36, 37, 43);
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  min-width: 80px;
+  max-width: 65px;
+}
+
+.layerLeftBtn1.active {
+  background-color: rgb(94, 156, 179);
+}
+
+.rightBody {
+  width: 96%;
+  background-color: white;
+  height: auto;
+}
+
+
+.layerLeftBtn {
+  flex: 1;
+  padding: 0 10px;
+  height: 70%;
+  width: 50%;
+  border: 1px solid white;
+  /* background-color: black; */
+  background-color: rgb(36, 37, 43);
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.layerLeftBtn.active {
+  background-color: rgb(94, 156, 179);
+}
+
+.HomeContainer {
+  display: flex;
+}
+
+.homeMainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeLeftContainer {
+  width: 60%;
+  height: 100%;
+}
+
+
+.OperationLeftButtonBar {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  /* padding: 0 10px; */
+  /* background-color: black; */
+  background-color: rgb(36, 37, 43);
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+/* .alineButton {
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.alineButton {
+  width: 95%;
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.mr-40 {
+  margin-right: 40px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.ml-20 {
+  margin-left: 20px !important;
+}
+
+.ml-30 {
+  margin-left: 30px !important;
+}
+
+.ml-50 {
+  margin-left: 30px !important;
+}
+
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-30 {
+  margin-top: 25px !important;
+}
+
+.table-container {
+  max-height: 400px;
+  width: 95%;
+  /* Ensure the container takes full width */
+  overflow-x: auto;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  margin: 0px 0 0px 10px;
+}
+
+
+
+
+.buttonSize {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(65, 105, 121);
+  color: white;
+  height: 35px;
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 10px;
+  /* Space between buttons */
+  padding: 0 10px;
+  /* Add some horizontal padding */
+  cursor: pointer;
+  border: none;
+  /* Remove default button border */
+}
+
+.buttonSize:disabled {
+  background-color: grey;
+  /* Change background color when disabled */
+  cursor: not-allowed;
+  /* Change cursor to indicate disabled */
+}
+
+table {
+  width: 100%;
+  /* Make the table responsive */
+  border-collapse: collapse;
+  /* Collapse borders */
+}
+
+th {
+  /* background-color: rgb(65, 105, 121); */
+  /* Set background color for headers */
+  color: white;
+  /* Set text color to white */
+  padding: 8px;
+  /* Add padding for table header cells */
+  text-align: left;
+  /* Align text to the left */
+  font-size: 14px;
+  /* Set font size for header */
+}
+
+td {
+  padding: 8px;
+  /* Add padding for table cells */
+  border: 1px solid #ccc;
+  /* Add border to cells */
+  font-size: 14px;
+  /* Set font size for table cells */
+}
+
+input {
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 14px;
+  background-color: rgb(36, 37, 43);
+  color: #ffffff;
+}
+
+
+input:focus {
+  border-color: rgb(65, 105, 121);
+  outline: none;
+  background-color: rgb(48, 49, 55);
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Chrome, Safari */
+}
+
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#toolbar {
+  background-color: var(--viewer-pdf-toolbar-background-color, aqua);
+}
