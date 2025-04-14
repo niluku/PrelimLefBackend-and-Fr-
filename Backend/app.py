@@ -28,6 +28,7 @@ def status():
 @app.route('/download', methods=['GET'])
 def download_gds():
     try:
+        print("working")
         # Use an absolute path or the correct relative path
         gds_file_path = os.path.join(os.getcwd(), 'new.gds')
         

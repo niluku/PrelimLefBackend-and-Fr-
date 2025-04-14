@@ -8,4 +8,5 @@ my-new-app/node_modules/
 .DS_Store
 *.log
 *.pyc
+*.gds
 __pycache__/
